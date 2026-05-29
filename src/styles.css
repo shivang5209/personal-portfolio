@@ -271,8 +271,10 @@ h1 {
   height: 100%;
   object-fit: contain;
   object-position: 50% 100%;
-  padding: 36px 8px 0;
+  padding: 24px 0 0;
   filter: saturate(1.08) contrast(1.03);
+  transform: scale(1.12);
+  transform-origin: 50% 100%;
 }
 
 .portrait-glow {
@@ -859,7 +861,8 @@ h1 {
 
   .portrait img {
     object-position: 50% 100%;
-    padding-top: 26px;
+    padding-top: 18px;
+    transform: scale(1.09);
   }
 
   .floating-tag {

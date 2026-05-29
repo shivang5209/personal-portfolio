@@ -122,7 +122,7 @@ function renderHero() {
         <span class="floating-tag tag-one">Web design</span>
         <span class="floating-tag tag-two">UI systems</span>
         <div class="portrait">
-          <img src="./assets/hero-cutout.png?v=6" alt="${portfolio.profile.name} portrait" />
+          <img src="./assets/hero-whatsapp.png?v=7" alt="${portfolio.profile.name} portrait" />
           <div class="portrait-glow"></div>
         </div>
       </div>
