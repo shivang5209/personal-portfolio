@@ -9,12 +9,12 @@ const portfolio = {
     bio:
       "I craft polished interfaces, responsive websites, and mobile-first digital experiences that feel clear, useful, and memorable.",
     location: "Available worldwide",
-    email: "hello@example.com",
+    email: "shivangsahu5209@gmail.com",
     experience: "5+",
     socials: [
       { label: "GitHub", href: "https://github.com/shivang5209", icon: "GH" },
       { label: "LinkedIn", href: "https://linkedin.com", icon: "IN" },
-      { label: "Email", href: "mailto:hello@example.com", icon: "@" }
+      { label: "Email", href: "mailto:shivangsahu5209@gmail.com", icon: "@" }
     ]
   },
   nav: ["About", "Services", "Works", "Contact"],
