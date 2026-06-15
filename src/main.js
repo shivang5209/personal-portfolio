@@ -53,28 +53,52 @@ const portfolio = {
   ],
   projects: [
     {
-      title: "StudioFlow",
-      category: "SaaS Dashboard",
-      description: "A calm analytics dashboard for creative teams tracking work, revenue, and launches.",
-      stack: ["React", "Design System", "Motion"],
-      live: "#",
-      source: "#"
+      title: "Emergency Ambulance Response",
+      category: "Flutter + IoT",
+      description:
+        "A Flutter emergency-response app combining live location, Firebase, IoT communication, accident detection, and Gemini-powered hotspot intelligence.",
+      stack: ["Flutter", "Firebase", "IoT + AI"],
+      source: "https://github.com/shivang5209/ambulance_v2"
     },
     {
-      title: "NovaPay",
-      category: "Mobile App",
-      description: "A mobile-first payment experience with simplified onboarding and trust-led visuals.",
-      stack: ["Mobile UI", "Prototype", "UX"],
-      live: "#",
-      source: "#"
+      title: "Network Intrusion Detection",
+      category: "Full-Stack ML",
+      description:
+        "A machine-learning security dashboard that classifies network traffic, generates alerts, tracks analytics, and controls live packet capture.",
+      stack: ["FastAPI", "React", "Random Forest"],
+      source: "https://github.com/shivang5209/nids-ml-project-network-intrusion-dectection"
     },
     {
-      title: "Orbit Labs",
-      category: "Agency Website",
-      description: "A high-conversion portfolio site with expressive case studies and fast loading.",
-      stack: ["Vite", "CSS", "SEO"],
-      live: "#",
-      source: "#"
+      title: "ExamIgnite VTU CIE",
+      category: "AI EdTech Platform",
+      description:
+        "An exam-practice platform for VTU students with answer evaluation, rubric-based feedback, question banks, and progress tracking.",
+      stack: ["FastAPI", "SQLAlchemy", "JavaScript"],
+      source: "https://github.com/shivang5209/examignite-vtu-cie"
+    },
+    {
+      title: "Phishing Website Detector",
+      category: "Cybersecurity ML",
+      description:
+        "A Flask-based phishing analyzer with URL risk scoring, explainable results, batch CSV analysis, reports, exports, and a secured API.",
+      stack: ["Flask", "Machine Learning", "Python"],
+      source: "https://github.com/shivang5209/phishing-website-detector"
+    },
+    {
+      title: "SMS Spam Classifier",
+      category: "NLP Application",
+      description:
+        "An end-to-end SMS classifier using TF-IDF and Naive Bayes, with a Flask prediction API and interactive Streamlit interface.",
+      stack: ["NLP", "Streamlit", "Naive Bayes"],
+      source: "https://github.com/shivang5209/Spam-Detection-system-aiml"
+    },
+    {
+      title: "Ticket Booking OpenEnv",
+      category: "AI Agent Environment",
+      description:
+        "An OpenEnv-compatible booking environment with movie, train, and multi-leg flight tasks, a FastAPI backend, and guided web UI.",
+      stack: ["FastAPI", "OpenEnv", "Docker"],
+      source: "https://github.com/shivang5209/ticket-booking-openenv-v3"
     }
   ],
   skills: [
@@ -214,7 +238,7 @@ function renderServices() {
 function renderProjects() {
   return `
     <section class="projects" id="works">
-      ${renderHeading("Works", "Selected project concepts ready to replace with your real work.")}
+      ${renderHeading("Works", "Selected projects I have designed and built.")}
       <div class="project-grid">
         ${portfolio.projects
           .map(
@@ -230,8 +254,9 @@ function renderProjects() {
                     ${project.stack.map((item) => `<span>${item}</span>`).join("")}
                   </div>
                   <div class="project-links">
-                    <a href="${project.live}">Live</a>
-                    <a href="${project.source}">Source</a>
+                    <a href="${project.source}" target="_blank" rel="noreferrer">
+                      View Repository <span aria-hidden="true">&rarr;</span>
+                    </a>
                   </div>
                 </div>
               </article>

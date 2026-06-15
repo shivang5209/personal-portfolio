@@ -595,6 +595,24 @@ h1 {
     linear-gradient(145deg, #11131b, #3f65ff 52%, #eaf0ff);
 }
 
+.art-4 {
+  background:
+    radial-gradient(circle at 25% 24%, rgba(165, 255, 222, 0.82), transparent 20%),
+    linear-gradient(145deg, #073c49, #26869a 52%, #d9fbff);
+}
+
+.art-5 {
+  background:
+    radial-gradient(circle at 72% 25%, rgba(255, 244, 166, 0.9), transparent 20%),
+    linear-gradient(145deg, #5b1747, #d25484 54%, #ffe5ee);
+}
+
+.art-6 {
+  background:
+    radial-gradient(circle at 27% 28%, rgba(255, 255, 255, 0.86), transparent 19%),
+    linear-gradient(145deg, #17203c, #3f7ac9 52%, #e3f1ff);
+}
+
 .project-body {
   padding: 22px;
 }
@@ -621,8 +639,22 @@ h1 {
 }
 
 .project-links {
-  justify-content: space-between;
+  justify-content: flex-end;
   font-weight: 850;
+}
+
+.project-links a {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.project-links a span {
+  transition: transform 180ms ease;
+}
+
+.project-links a:hover span {
+  transform: translateX(4px);
 }
 
 .contact {
