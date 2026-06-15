@@ -1,16 +1,18 @@
+import "./styles.css";
+
 const portfolio = {
   profile: {
-    name: "Your Name",
-    logo: "YN",
-    intro: "Hey, I'm Your Name.",
-    headline: "Product, UI/UX & Web Development",
+    name: "Shivang",
+    logo: "S",
+    intro: "Hey, I'm Shivang.",
+    headline: "UI/UX, Web & Mobile Development",
     bio:
-      "I craft polished interfaces, thoughtful brand systems, and fast web experiences that help digital products feel clear, useful, and memorable.",
+      "I craft polished interfaces, responsive websites, and mobile-first digital experiences that feel clear, useful, and memorable.",
     location: "Available worldwide",
     email: "hello@example.com",
     experience: "5+",
     socials: [
-      { label: "GitHub", href: "https://github.com", icon: "GH" },
+      { label: "GitHub", href: "https://github.com/shivang5209", icon: "GH" },
       { label: "LinkedIn", href: "https://linkedin.com", icon: "IN" },
       { label: "Email", href: "mailto:hello@example.com", icon: "@" }
     ]
@@ -37,10 +39,16 @@ const portfolio = {
       variant: "gallery"
     },
     {
-      title: "Development",
+      title: "Frontend Development",
       description: "Front-end builds with reusable components and precise details.",
       icon: "</>",
       variant: "orbit"
+    },
+    {
+      title: "Mobile Development",
+      description: "Mobile-friendly products and app interfaces designed for smooth everyday use.",
+      icon: "MB",
+      variant: "mockup"
     }
   ],
   projects: [
@@ -54,9 +62,9 @@ const portfolio = {
     },
     {
       title: "NovaPay",
-      category: "Fintech App",
+      category: "Mobile App",
       description: "A mobile-first payment experience with simplified onboarding and trust-led visuals.",
-      stack: ["UX", "Prototype", "Brand"],
+      stack: ["Mobile UI", "Prototype", "UX"],
       live: "#",
       source: "#"
     },
@@ -72,6 +80,7 @@ const portfolio = {
   skills: [
     { name: "Figma", icon: "Fi" },
     { name: "React", icon: "Re" },
+    { name: "Mobile UI", icon: "MB" },
     { name: "UI Systems", icon: "UI" },
     { name: "Brand", icon: "Br" },
     { name: "Motion", icon: "Mo" },
@@ -120,9 +129,9 @@ function renderHero() {
       </div>
       <div class="portrait-wrap reveal">
         <span class="floating-tag tag-one">Web design</span>
-        <span class="floating-tag tag-two">UI systems</span>
+        <span class="floating-tag tag-two">Mobile apps</span>
         <div class="portrait">
-          <img src="./assets/hero-whatsapp.png?v=7" alt="${portfolio.profile.name} portrait" />
+          <img src="/assets/hero-whatsapp.png?v=8" alt="${portfolio.profile.name} portrait" />
           <div class="portrait-glow"></div>
         </div>
       </div>
@@ -143,7 +152,7 @@ function renderAbout() {
       </div>
       <div class="about-card">
         ${icon("OK")}
-        <p>I move from idea to interface to production-ready front end, keeping the experience beautiful, responsive, and easy to maintain.</p>
+        <p>I move from idea to interface to production-ready web and mobile experiences, keeping the result beautiful, responsive, and easy to maintain.</p>
         <span>${portfolio.profile.location}</span>
       </div>
     </section>
@@ -278,7 +287,7 @@ function renderFooter() {
           <span>${portfolio.profile.logo}</span>
           ${portfolio.profile.name}
         </a>
-        <p>Designer + Developer creating polished interfaces, brand systems, and fast web experiences.</p>
+        <p>Designer + Developer creating polished interfaces, mobile experiences, and fast websites.</p>
       </div>
       <div class="footer-links" aria-label="Footer navigation">
         ${portfolio.nav.map((item) => `<a href="#${slugify(item)}">${item}</a>`).join("")}

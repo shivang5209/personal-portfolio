@@ -4,9 +4,11 @@
   "version": "0.1.0",
   "type": "module",
   "scripts": {
-    "dev": "npx vite --host 127.0.0.1",
-    "build": "npx vite build",
-    "preview": "npx vite preview --host 127.0.0.1"
+    "dev": "vite --host 127.0.0.1",
+    "build": "vite build",
+    "preview": "vite preview --host 127.0.0.1"
   },
-  "dependencies": {}
+  "devDependencies": {
+    "vite": "^7.2.4"
+  }
 }
